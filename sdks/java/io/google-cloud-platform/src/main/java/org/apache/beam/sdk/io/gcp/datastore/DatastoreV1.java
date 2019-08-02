@@ -845,7 +845,7 @@ public class DatastoreV1 {
           Metrics.counter(DatastoreWriterFn.class, "datastoreRpcErrors");
       private final Counter rpcSuccesses =
           Metrics.counter(DatastoreWriterFn.class, "datastoreRpcSuccesses");
-      private static final int MAX_RETRIES = 5;
+      private static final int MAX_RETRIES = 30;
       private static final FluentBackoff RUNQUERY_BACKOFF =
           FluentBackoff.DEFAULT
               .withMaxRetries(MAX_RETRIES)
