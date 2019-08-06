@@ -101,6 +101,8 @@ rat {
 
     // Json doesn't support comments.
     "**/*.json",
+
+    "**/Pipfile*",
   ]
 
   // Add .gitignore excludes to the Apache Rat exclusion list. We re-create the behavior

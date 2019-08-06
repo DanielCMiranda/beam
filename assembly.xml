@@ -103,6 +103,8 @@
 
                 <!-- code review related -->
                 <exclude>**/OWNERS</exclude>
+
+                <exclude>Pipfile*</exclude>
             </excludes>
         </fileSet>
         <!-- license, readme, etc. calculated at build time -->
