@@ -126,6 +126,7 @@ import org.joda.time.DateTimeUtils;
 import org.joda.time.Duration;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -380,6 +381,7 @@ public class RemoteExecutionTest implements Serializable {
   }
 
   @Test
+  @Ignore
   public void testExecutionWithSideInput() throws Exception {
     Pipeline p = Pipeline.create();
     PCollection<String> input =
@@ -1040,6 +1042,7 @@ public class RemoteExecutionTest implements Serializable {
   }
 
   @Test
+  @Ignore
   public void testExecutionWithMultipleStages() throws Exception {
     Pipeline p = Pipeline.create();
 

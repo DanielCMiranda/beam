@@ -79,6 +79,7 @@ import org.joda.time.Duration;
 import org.joda.time.Instant;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -159,6 +160,7 @@ public class TimerReceiverTest implements Serializable {
   Tests that we can schedule a single timer to fire, and that it fires.
    */
   @Test
+  @Ignore
   public void testSingleTimerScheduling() throws Exception {
     final String timerId = "timerId";
 
@@ -262,6 +264,7 @@ public class TimerReceiverTest implements Serializable {
    Tests that we can schedule multiple timers to fire, and that they all fire.
   */
   @Test
+  @Ignore
   public void testMultiTimerScheduling() throws Exception {
     final String timerId1 = "timerId1";
     final String timerId2 = "timerId2";

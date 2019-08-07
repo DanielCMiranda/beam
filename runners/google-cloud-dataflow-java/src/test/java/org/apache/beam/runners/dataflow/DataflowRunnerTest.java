@@ -134,6 +134,7 @@ import org.hamcrest.TypeSafeMatcher;
 import org.joda.time.Duration;
 import org.joda.time.Instant;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -332,6 +333,7 @@ public class DataflowRunnerTest implements Serializable {
   }
 
   @Test
+  @Ignore
   public void testPathExistsValidation() {
     String[] args =
         new String[] {
